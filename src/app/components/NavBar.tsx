@@ -1,0 +1,63 @@
+"use client";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { motion } from "framer-motion";
+
+const navItems = [
+    { href: "/", label: "$ whoami"},
+    { href: "/projects", label: "$ ls projects"},
+    { href: "/blog", label: "$ cat blog.md"}
+    // { href: "/about", label: "About"},
+    // { href: "/contact", label: "Contact"},
+]
+export default function NavBar() {
+    const pathName = usePathname();
+  
+    return (
+        <motion.div
+      className="absolute top-10 left-1/2 transform -translate-x-1/2 z-50"
+      initial={{ opacity: 0, y: -20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5 }}
+    >
+     <nav className="relative flex items-center justify-center gap-6 px-6 py-3 rounded-full border border-white/20 bg-black/60 backdrop-blur-md shadow-md">
+        {navItems.map(({ href, label }) => {
+          const isActive = pathName === href;
+          return (
+            <Link
+              key={href}
+              href={href}
+              className="relative px-4 py-1 text-white transition"
+            >
+              {/* พื้นหลัง capsule (ถ้าต้องการ) */}
+              {isActive && (
+                <motion.div
+                  layoutId="active-pill"
+                  className="absolute inset-0 rounded-full bg-white"
+                  transition={{ type: "spring", stiffness: 500, damping: 30 }}
+                />
+              )}
+
+              {/* ข้อความลิงก์ */}
+              <span className={`relative z-10 ${isActive ? "text-black font-semibold" : ""}`}>
+                {label}
+              </span>
+
+              {/* เส้นไฟฟ้าใต้ลิงก์แบบในภาพ */}
+              {isActive && (
+  <motion.div
+    layoutId="active-glow"
+    className="absolute bottom-0 left-1/2 w-[70%] h-[8px] -translate-x-1/2 rounded-full 
+               bg-blue-400/80 blur-sm
+               after:content-[''] after:absolute after:inset-0 after:rounded-full 
+               after:bg-blue-400/40 after:blur-md"
+    transition={{ type: "spring", stiffness: 500, damping: 30 }}
+  />
+)}
+            </Link>
+          );
+        })}
+      </nav>
+    </motion.div>
+    );
+  }

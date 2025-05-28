@@ -1,0 +1,79 @@
+# About me 
+Hello! I'm a passionate developer ...
+Hello! I'm Pasit, a 3rd-year Computer Science student passionate about building web & mobile apps.
+## History 
+- เรียนที่ไหนบ้าง 
+- ความสนใจ (Fullstack, Backend, Mobile, AI ในอนาคต)
+- จุดเด่นของคุณ (ถนัดเทคโนโลยีอะไร, ทำงานเป็นทีมได้, ฯลฯ)
+Tools/Tech Stack ที่ใช้บ่อย (Flutter, Docker, PostgreSQL) 
+
+
+# My Skills 
+## Programming 
+C 
+C++ 
+C#
+JavaScript 
+TypeScript 
+Python
+Go 
+Rust
+Dart
+Java 
+
+## Frontend 
+React
+Next
+Vue 
+TailwindCSS 
+
+## Backend 
+Express
+Elysia
+Nest 
+Hono
+Fiber 
+axum 
+
+## Cross-platform 
+Electron 
+Tuari 
+React Native 
+Flutter 
+
+
+## Others 
+Git 
+Docker 
+Kubernetes 
+LangChain 
+Kafka
+
+
+# Contact 
+FOR-WORK EMAIL: contact@pasitdev.com 
+PERSONAL EMAIL: pasit.polw@gmail.com
+GITHUB: pasitpolw
+LINKEDIN: Pasit Polw 
+DEVHUB: Pasit Polw
+
+
+FOOTER 
+© 2025 pasitdev         Made with by pasitdev           Contact Privacy Terms
+
+
+# Projects 
+- project name 
+- screenshot or demo (GIF, Video or Preview)
+- short describe about project and tech stack using 
+- link to github, website or demo 
+- category (Mobile App, Web App, Tools, etc.)
+
+# Skills 
+Frontend: HTML CSS JavaScript TypeScript Next.js, React Flutter
+Backend: Node.js Express.js PostgreSQL, MySQL, Firebase, MongoDB
+DevOps: Docker, Github Actions 
+Tools: Git, Figma, VS Code, Postman 
+
+
+# Blog 
