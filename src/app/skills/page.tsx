@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion"
 import { FiTerminal } from "react-icons/fi"
-import { FaCode, FaMobileAlt, FaServer, FaDatabase, FaTools } from "react-icons/fa"
+import { FaCode, FaMobileAlt, FaServer, FaDatabase } from "react-icons/fa"
 import { SiFrontendmentor } from "react-icons/si"
 
 const skills = [
