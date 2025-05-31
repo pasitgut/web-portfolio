@@ -128,7 +128,7 @@
 import { useState } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import { projects } from "../lib/projects"
-import { FiTerminal, FiFolder } from "react-icons/fi"
+import { FiTerminal } from "react-icons/fi"
 import Image from "next/image"
 
 const categories = ['All', 'Mobile App', 'Web App', 'Others']

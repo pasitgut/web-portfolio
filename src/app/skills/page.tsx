@@ -61,7 +61,7 @@ export default function Page() {
             {/* Section Header with Icon */}
             <div className="flex items-center gap-2 mb-3 text-xs text-slate-400 uppercase tracking-wider">
               <span className="text-lg">{section.icon}</span>
-              <span>// {section.title}</span>
+              <span>{section.title}</span>
             </div>
 
             {/* Skills List */}

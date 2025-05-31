@@ -1,13 +1,9 @@
 'use client';
 
-{ /* import { getAllPosts } from "../lib/blog" */ }
 import Link from "next/link"
 import { FiTerminal } from "react-icons/fi"
 import { motion } from "framer-motion";
-
-{ /* export default async function Page() { */ }
 export default function Page() {
-  { /*const posts = await getAllPosts()    */ }
   const posts = [{
     slug: "first-blog",
     title: "My First Blog",
@@ -41,7 +37,7 @@ export default function Page() {
                 <h2 className="text-lg text-sky-400 font-semibold group-hover:underline underline-offset-2">
                   {post.title}
                 </h2>
-                <p className="text-xs text-slate-400 mb-1">// {post.date}</p>
+                <p className="text-xs text-slate-400 mb-1">{post.date}</p>
                 <p className="text-sm text-slate-300">{post.description}</p>
               </div>
             </Link>

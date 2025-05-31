@@ -2,10 +2,15 @@ import { markdownToHtml } from '../../lib/markdownToHtml'
 import { getAllPosts } from '../../lib/blog'
 import { notFound } from 'next/navigation'
 
-export default async function BlogPostPage({ params}: { params: { slug: string }}) {
-    params = await params;
+type Props = {
+  params: Promise<{
+    slug: string
+  }>
+}
+export default async function Page({ params }: Props) {
+    const resolveParams = await params;
     const posts = await getAllPosts();
-    const post = posts.find(p => p.slug === params.slug);
+    const post = posts.find(p => p.slug === resolveParams.slug);
   
     if (!post) return notFound();
   
