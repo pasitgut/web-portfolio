@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Source_Code_Pro } from "next/font/google";
 import "./globals.css";
 import NavBar from "./components/NavBar";
-
+import Footer from "./components/Footer";
 
 const sourceCodePro = Source_Code_Pro({
   subsets: ["latin"],
@@ -22,11 +22,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${sourceCodePro.variable} bg-black text-white min-h-screen relative`}>
-        <NavBar/>
-        <main className="pt-32 px-4">
+      <body className={`${sourceCodePro.variable} bg-black text-white min-h-screen flex flex-col`}>
+        <NavBar />
+        <main className="pt-32 px-4 flex-grow">
         {children}
         </main>
+        <Footer />
       </body>
     </html>
   );

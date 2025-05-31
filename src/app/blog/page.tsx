@@ -1,21 +1,53 @@
-import { getAllPosts } from "../lib/blog";
-import Link from "next/link";
+'use client';
 
+// import { getAllPosts } from "../lib/blog"
+import Link from "next/link"
+import { FiTerminal } from "react-icons/fi"
+import { motion } from "framer-motion";
+
+// export default async function Page() {
 export default function Page() {
-    const posts = getAllPosts();
+  // const posts = await getAllPosts()  
+  const posts = [{
+    slug: "first-blog",
+    title: "My First Blog",
+    date: "2025-05-28",
+    description: "First blog about next.js",
+    content: "",
+  }]
+  return (
+    <div className="min-h-screen px-6 py-12 max-w-4xl mx-auto text-slate-100 font-mono">
+      {/* Header */}
+      <motion.h1
+        initial={{ opacity: 0, y: -10 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+        className="text-3xl flex items-center gap-2 mb-8 text-sky-400"
+      >
+        <FiTerminal /> ~/blog &gt; <span className="text-white">posts</span>
+      </motion.h1>
 
-    return (
-        <div className="max-w-4xl mx-auto px-4 py-8">
-        <h1 className="text-3xl font-bold mb-6">Blog</h1>
-        <div className="space-y-6">
-          {posts.map(post => (
-            <Link key={post.slug} href={`/blog/${post.slug}`} className="block p-4 border rounded hover:bg-gray-50">
-              <h2 className="text-xl font-semibold">{post.title}</h2>
-              <p className="text-sm text-gray-500">{post.date}</p>
-              <p className="mt-2 text-gray-700">{post.description}</p>
+      {/* Posts List */}
+      <div className="space-y-6">
+        {posts.map((post, idx) => (
+          <motion.div
+            key={post.slug}
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.3, delay: idx * 0.05 }}
+          >
+            <Link href={`/blog/${post.slug}`}>
+              <div className="group border border-slate-700 bg-[#0f172a] rounded p-5 hover:border-sky-500 hover:bg-slate-800/40 transition-all duration-300 cursor-pointer">
+                <h2 className="text-lg text-sky-400 font-semibold group-hover:underline underline-offset-2">
+                  {post.title}
+                </h2>
+                <p className="text-xs text-slate-400 mb-1">// {post.date}</p>
+                <p className="text-sm text-slate-300">{post.description}</p>
+              </div>
             </Link>
-          ))}
-        </div>
+          </motion.div>
+        ))}
       </div>
-    )
+    </div>
+  )
 }

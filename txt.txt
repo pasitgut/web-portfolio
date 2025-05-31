@@ -8,43 +8,21 @@ Hello! I'm Pasit, a 3rd-year Computer Science student passionate about building 
 Tools/Tech Stack ที่ใช้บ่อย (Flutter, Docker, PostgreSQL) 
 
 
-# My Skills 
-## Programming 
-C 
-C++ 
-C#
-JavaScript 
-TypeScript 
-Python
-Go 
-Rust
-Dart
-Java 
 
-## Frontend 
-React
-Next
-Vue 
-TailwindCSS 
+
 
 ## Backend 
-Express
-Elysia
 Nest 
-Hono
-Fiber 
+Hono 
 axum 
 
 ## Cross-platform 
 Electron 
 Tuari 
 React Native 
-Flutter 
 
 
 ## Others 
-Git 
-Docker 
 Kubernetes 
 LangChain 
 Kafka
@@ -58,10 +36,6 @@ LINKEDIN: Pasit Polw
 DEVHUB: Pasit Polw
 
 
-FOOTER 
-© 2025 pasitdev         Made with by pasitdev           Contact Privacy Terms
-
-
 # Projects 
 - project name 
 - screenshot or demo (GIF, Video or Preview)
@@ -69,11 +43,3 @@ FOOTER
 - link to github, website or demo 
 - category (Mobile App, Web App, Tools, etc.)
 
-# Skills 
-Frontend: HTML CSS JavaScript TypeScript Next.js, React Flutter
-Backend: Node.js Express.js PostgreSQL, MySQL, Firebase, MongoDB
-DevOps: Docker, Github Actions 
-Tools: Git, Figma, VS Code, Postman 
-
-
-# Blog 

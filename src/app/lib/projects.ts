@@ -11,15 +11,15 @@ export const projects: Projects[] = [
     {
         id: 1,
         title: "MoneyFlow",
-        description: "The MoneyFlow is app for money management",
-        image: "https://picsum.photos/200/300",
+        description: "MoneyFlow is a personal money management app.",
+        image: "",
         category: "Mobile App",
     },
     {
         id: 2,
-        title: "Restaurant Management System",
-        description: "This is description for restaurant management system",
-        image: "https://picsum.photos/200/300",
+        title: "ScanToDine",
+        description: "ScanToDine is a small restaurant management system with food ordering system via QR Code scanning.",
+        image: "",
         category: "Web App"
     },
     {
