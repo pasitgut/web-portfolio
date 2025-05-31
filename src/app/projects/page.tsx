@@ -221,6 +221,8 @@ export default function Page() {
                   <Image
                     src={project.image}
                     alt={project.title}
+                    width={200}
+                    height={300}
                     className="w-full sm:w-40 h-28 object-cover rounded shadow-md"
                   />
                 ) : (
