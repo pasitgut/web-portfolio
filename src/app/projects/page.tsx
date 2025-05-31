@@ -129,6 +129,7 @@ import { useState } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import { projects } from "../lib/projects"
 import { FiTerminal, FiFolder } from "react-icons/fi"
+import Image from "next/image"
 
 const categories = ['All', 'Mobile App', 'Web App', 'Others']
 
@@ -217,7 +218,7 @@ export default function Page() {
                 className="flex flex-col sm:flex-row items-start gap-4 last:border-none py-4 hover:bg-gray-800/30 rounded-lg"
               >
                 {project.image ? (
-                  <img
+                  <Image
                     src={project.image}
                     alt={project.title}
                     className="w-full sm:w-40 h-28 object-cover rounded shadow-md"

@@ -1,13 +1,13 @@
 'use client';
 
-// import { getAllPosts } from "../lib/blog"
+{ /* import { getAllPosts } from "../lib/blog" */ }
 import Link from "next/link"
 import { FiTerminal } from "react-icons/fi"
 import { motion } from "framer-motion";
 
-// export default async function Page() {
+{ /* export default async function Page() { */ }
 export default function Page() {
-  // const posts = await getAllPosts()  
+  { /*const posts = await getAllPosts()    */ }
   const posts = [{
     slug: "first-blog",
     title: "My First Blog",
