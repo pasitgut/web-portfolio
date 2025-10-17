@@ -24,7 +24,6 @@ const Terminal = () => {
     `,
     about: `
       <div class="mb-2">
-          <p>สวัสดีครับ!</p>
           <p>Hello! I'm Pasit, a 3rd-year Computer Science student passionate about building web & mobile apps.</p>
       </div>
     `,
@@ -90,10 +89,10 @@ const Terminal = () => {
     `,
     contact: `
       <div class="mb-2">
-          <p>ติดต่อผมได้ที่:</p>
+          <p>Contact me!:</p>
           <div class="ml-2">
               <p><span class="text-green-400">Email:</span> <a class="terminal-link" href="mailto:your.email@example.com">your.email@example.com</a></p>
-              ...
+              <p><span class="text-green-400">Github:</span> <a class="terminal-link" href="github.com/pasitgut">github.com/pasitgut</a></p>
           </div>
       </div>
     `,
