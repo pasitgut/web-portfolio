@@ -22,12 +22,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${sourceCodePro.variable} bg-black text-white min-h-screen flex flex-col`}>
+      {/* <body className={`${sourceCodePro.variable} bg-black text-white min-h-screen flex flex-col`}>
         <NavBar />
         <main className="pt-32 px-4 flex-grow">
         {children}
         </main>
         <Footer />
+      </body> */}
+      <body>
+        {children}
+
       </body>
     </html>
   );
