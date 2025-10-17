@@ -25,16 +25,62 @@ const Terminal = () => {
     about: `
       <div class="mb-2">
           <p>สวัสดีครับ!</p>
-          <p>ผมเป็นนักศึกษา علوم کامپیوتر ที่สนใจการพัฒนาเว็บแอปที่มีคุณภาพ</p>
+          <p>Hello! I'm Pasit, a 3rd-year Computer Science student passionate about building web & mobile apps.</p>
       </div>
     `,
     skills: `
-      <div class="mb-2">
-          <p class="font-bold text-yellow-400">Languages:</p>
-          <p class="ml-2">- JavaScript, Python, Java</p>
-          ...
-      </div>
-    `,
+  <div class="mb-2 space-y-2">
+    <p class="font-bold text-yellow-400">🧠 Languages:</p>
+    <ul class="ml-4 list-disc list-inside">
+      <li>JavaScript</li>
+      <li>TypeScript</li>
+      <li>Go</li>
+      <li>Rust</li>
+      <li>Java</li>
+      <li>Python</li>
+      <li>Dart</li>
+      <li>Kotlin</li>
+      <li>C++</li>
+    </ul>
+
+    <p class="font-bold text-yellow-400">🎨 Frontend:</p>
+    <ul class="ml-4 list-disc list-inside">
+      <li>React</li>
+      <li>Next.js</li>
+      <li>Vue.js</li>
+      <li>Tailwind CSS</li>
+      <li>Flutter</li>
+      <li>Jetpack Compose</li>
+    </ul>
+
+    <p class="font-bold text-yellow-400">🛠️ Backend:</p>
+    <ul class="ml-4 list-disc list-inside">
+      <li>Express.js</li>
+      <li>Node.js</li>
+      <li>Bun.js</li>
+      <li>Elysia.js</li>
+      <li>Hono.js</li>
+      <li>Fiber</li>
+      <li>Gin</li>
+    </ul>
+
+    <p class="font-bold text-yellow-400">🗄️ Databases:</p>
+    <ul class="ml-4 list-disc list-inside">
+      <li>PostgreSQL</li>
+      <li>MySQL</li>
+      <li>MongoDB</li>
+      <li>Firebase</li>
+    </ul>
+
+    <p class="font-bold text-yellow-400">⚙️ Tools & Platforms:</p>
+    <ul class="ml-4 list-disc list-inside">
+      <li>Docker</li>
+      <li>Postman</li>
+      <li>Git & GitHub</li>
+    </ul>
+  </div>
+`,
+
     projects: `
       <div class="mb-2">
           <p class="font-bold text-yellow-400">Projects:</p>
