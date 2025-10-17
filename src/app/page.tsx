@@ -1,5 +1,5 @@
 // import Head from 'next/head'
-import Terminal from '../components/Terminal.tsx';
+import Terminal from '../components/Terminal';
 
 export default function Home() {
   return (

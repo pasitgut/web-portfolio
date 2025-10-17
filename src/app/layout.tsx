@@ -1,14 +1,12 @@
 import type { Metadata } from "next";
-import { Source_Code_Pro } from "next/font/google";
+// import { Source_Code_Pro } from "next/font/google";
 import "./globals.css";
-import NavBar from "./components/NavBar";
-import Footer from "./components/Footer";
 
-const sourceCodePro = Source_Code_Pro({
-  subsets: ["latin"],
-  weight: ["400", "700"],
-  variable: "--font-source-code-pro",
-})
+// const sourceCodePro = Source_Code_Pro({
+//   subsets: ["latin"],
+//   weight: ["400", "700"],
+//   variable: "--font-source-code-pro",
+// })
 
 export const metadata: Metadata = {
   title: "Web portfolio",
