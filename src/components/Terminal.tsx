@@ -87,15 +87,24 @@ const Terminal = () => {
           ...
       </div>
     `,
-    contact: `
-      <div class="mb-2">
-          <p>Contact me!:</p>
-          <div class="ml-2">
-              <p><span class="text-green-400">Email:</span> <a class="terminal-link" href="mailto:your.email@example.com">your.email@example.com</a></p>
-              <p><span class="text-green-400">Github:</span> <a class="terminal-link" href="github.com/pasitgut">github.com/pasitgut</a></p>
-          </div>
-      </div>
-    `,
+   contact: `
+  <div class="mb-2">
+    <p class="font-bold text-yellow-400">📬 Contact Me:</p>
+    <div class="ml-4 space-y-1 mt-1">
+      <p>
+        <span class="text-green-400">Email:</span>
+        <a class="terminal-link" href="mailto:your.email@example.com"> your.email@example.com</a>
+      </p>
+      <p>
+        <span class="text-green-400">GitHub:</span>
+        <a class="terminal-link" href="https://github.com/pasitgut" target="_blank" rel="noopener noreferrer">
+          github.com/pasitgut
+        </a>
+      </p>
+    </div>
+  </div>
+`,
+
     resume: `
       <div class="mb-2">
           <p>ดาวน์โหลดเรซูเม่ได้ที่นี่: <a class="terminal-link" href="/resume.pdf" target="_blank">resume.pdf</a></p>
