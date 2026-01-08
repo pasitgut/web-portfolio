@@ -1,41 +1,42 @@
-'use client'
+"use client";
 
-import { motion } from 'framer-motion'
-import Link from 'next/link'
+import { motion } from "framer-motion";
+import Link from "next/link";
 
 export default function NotFound() {
   return (
-    <div className="min-h-screen flex flex-col items-center text-gray-800 px-4 mt-32">
+    <div className="min-h-screen flex flex-col items-center justify-center px-4 text-center text-neutral-800">
       <motion.h1
-        className="text-6xl font-bold mb-4 text-gray-300"
-        initial={{ opacity: 0, y: -20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6 }}
+        className="text-7xl font-semibold text-neutral-300"
+        initial={{ opacity: 0, scale: 0.95 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.5 }}
       >
         404
       </motion.h1>
 
       <motion.p
-        className="text-xl mb-8 text-center text-gray-400"
+        className="mt-4 text-base text-neutral-500"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ delay: 0.3, duration: 0.6 }}
+        transition={{ delay: 0.2, duration: 0.5 }}
       >
-        ขออภัย เราไม่พบหน้าที่คุณกำลังมองหา
+        ไม่พบหน้าที่คุณกำลังมองหา
       </motion.p>
 
       <motion.div
+        className="mt-8"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ delay: 0.6, duration: 0.6 }}
+        transition={{ delay: 0.4, duration: 0.5 }}
       >
         <Link
           href="/"
-          className="px-6 py-3 bg-blue-600 text-white rounded-xl shadow hover:bg-blue-700 transition"
+          className="text-sm text-neutral-600 hover:text-neutral-900 transition underline underline-offset-4"
         >
           กลับหน้าหลัก
         </Link>
       </motion.div>
     </div>
-  )
+  );
 }
