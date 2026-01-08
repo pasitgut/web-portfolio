@@ -12,6 +12,11 @@ import {
 } from "lucide-react";
 import { GitHubCalendar } from "react-github-calendar";
 
+import { Tabs, TabsTrigger, TabsContent, TabsList } from "@/components/ui/tabs";
+import ProjectSection from "./components/project";
+import AboutSection from "./components/about";
+import TechStackSection from "./components/techstack";
+
 export default function Home() {
   const theme = {
     light: [
@@ -32,7 +37,7 @@ export default function Home() {
 
   return (
     <main className="min-h-screen bg-white bg-dot-pattern font-sans text-zinc-900 selection:bg-zinc-100">
-      <div className="max-w-2xl mx-auto px-6 py-12 md:py-20 space-y-12">
+      <div className="max-w-2xl mx-auto px-6 py-12 md:py-12">
         {/* --- Header Section --- */}
         <section className="flex flex-col gap-6 relative">
           {/* Top Row: Avatar & Name */}
@@ -51,7 +56,7 @@ export default function Home() {
               </div>
 
               {/* Hire Me Hand-drawn Arrow (SVG) */}
-              <div className="absolute -top-10 -left-24 hidden sm:block opacity-60 rotate-[-6deg] pointer-events-none">
+              {/*<div className="absolute -top-10 -left-24 hidden sm:block opacity-60 rotate-[-6deg] pointer-events-none">
                 <div className="flex flex-col items-center">
                   <span className="font-handwriting text-sm text-zinc-500 mb-1 font-medium">
                     HIRE ME
@@ -77,7 +82,7 @@ export default function Home() {
                     />
                   </svg>
                 </div>
-              </div>
+              </div>*/}
             </div>
 
             <div className="flex flex-col justify-center pt-2">
@@ -150,7 +155,7 @@ export default function Home() {
           </div>
         </section>
         {/* --- Contribution Graph Mockup --- */}
-        <section className="border border-zinc-200 rounded-xl p-5 bg-white/50 backdrop-blur-sm">
+        <section className="border border-zinc-200 rounded mt-6 p-4 bg-white/50 backdrop-blur-sm">
           <GitHubCalendar
             username="pasitgut"
             colorScheme="light"
@@ -158,7 +163,27 @@ export default function Home() {
             blockSize={12}
             blockMargin={4}
             theme={theme}
+            year={"last"}
           />
+        </section>
+        <section>
+          <Tabs defaultValue="project">
+            <TabsList>
+              <TabsTrigger value="about">About</TabsTrigger>
+              <TabsTrigger value="project">Projects</TabsTrigger>
+              {/*<TabsTrigger value="experience">Experience</TabsTrigger>*/}
+              <TabsTrigger value="techstack">Tech Stack</TabsTrigger>
+            </TabsList>
+            <TabsContent value="about">
+              <AboutSection />
+            </TabsContent>
+            <TabsContent value="project">
+              <ProjectSection />
+            </TabsContent>
+            <TabsContent value="techstack">
+              <TechStackSection />
+            </TabsContent>
+          </Tabs>
         </section>
         {/*<section className="border border-zinc-200 rounded-xl p-5 bg-white/50 backdrop-blur-sm">
           // Grid Mockup
