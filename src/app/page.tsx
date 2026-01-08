@@ -16,6 +16,7 @@ import { Tabs, TabsTrigger, TabsContent, TabsList } from "@/components/ui/tabs";
 import ProjectSection from "./components/project";
 import AboutSection from "./components/about";
 import TechStackSection from "./components/techstack";
+import AnimatedTabs from "./components/AnimatedTabs";
 
 export default function Home() {
   return (
@@ -138,23 +139,7 @@ export default function Home() {
           </div>
         </section>
         <section className="flex flex-col mt-6">
-          <Tabs defaultValue="about">
-            <TabsList>
-              <TabsTrigger value="about">About</TabsTrigger>
-              <TabsTrigger value="project">Projects</TabsTrigger>
-              {/*<TabsTrigger value="experience">Experience</TabsTrigger>*/}
-              <TabsTrigger value="techstack">Tech Stack</TabsTrigger>
-            </TabsList>
-            <TabsContent value="about">
-              <AboutSection />
-            </TabsContent>
-            <TabsContent value="project">
-              <ProjectSection />
-            </TabsContent>
-            <TabsContent value="techstack">
-              <TechStackSection />
-            </TabsContent>
-          </Tabs>
+          <AnimatedTabs />
         </section>
         {/*<section className="border border-zinc-200 rounded-xl p-5 bg-white/50 backdrop-blur-sm">
           // Grid Mockup
