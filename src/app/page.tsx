@@ -18,23 +18,6 @@ import AboutSection from "./components/about";
 import TechStackSection from "./components/techstack";
 
 export default function Home() {
-  const theme = {
-    light: [
-      "#f5f5f5", // off white
-      "#d6d6d6", // light gray
-      "#b0b0b0", // medium gray
-      "#7a7a7a", // dark gray
-      "#404040", // almost black
-    ],
-    dark: [
-      "#0a0a0a", // deep black
-      "#141414", // very dark gray
-      "#262626", // dark gray
-      "#404040", // medium gray
-      "#666666", // lighter gray (highlight)
-    ],
-  };
-
   return (
     <main className="min-h-screen bg-white bg-dot-pattern font-sans text-zinc-900 selection:bg-zinc-100">
       <div className="max-w-2xl mx-auto px-6 py-12 md:py-12">
@@ -154,20 +137,8 @@ export default function Home() {
             </div>
           </div>
         </section>
-        {/* --- Contribution Graph Mockup --- */}
-        <section className="border border-zinc-200 rounded mt-6 p-4 bg-white/50 backdrop-blur-sm">
-          <GitHubCalendar
-            username="pasitgut"
-            colorScheme="light"
-            fontSize={12}
-            blockSize={12}
-            blockMargin={4}
-            theme={theme}
-            year={"last"}
-          />
-        </section>
-        <section>
-          <Tabs defaultValue="project">
+        <section className="flex flex-col mt-6">
+          <Tabs defaultValue="about">
             <TabsList>
               <TabsTrigger value="about">About</TabsTrigger>
               <TabsTrigger value="project">Projects</TabsTrigger>

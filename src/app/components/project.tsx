@@ -1,3 +1,7 @@
 export default function ProjectSection() {
-  return <div>Projects</div>;
+  return (
+    <div className="flex flex-col">
+      <h1 className="text-2xl font-bold">Projects</h1>
+    </div>
+  );
 }
