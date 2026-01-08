@@ -115,7 +115,7 @@ export default function Home() {
                 icon={<Github size={15} />}
                 label="GitHub"
               />
-              <SocialLink
+              {/*<SocialLink
                 href="#"
                 icon={<Twitter size={15} />}
                 label="Twitter"
@@ -134,7 +134,7 @@ export default function Home() {
                 href="#"
                 icon={<Code2 size={15} />}
                 label="LeetCode"
-              />
+              />*/}
             </div>
           </div>
         </section>
