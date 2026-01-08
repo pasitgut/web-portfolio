@@ -29,7 +29,6 @@ export default function Home() {
             <div className="relative group">
               {/* Avatar Container */}
               <div className="h-24 w-24 rounded-2xl overflow-hidden border border-zinc-200 shadow-sm bg-zinc-50 relative z-10">
-                {/* ใส่รูปของคุณที่นี่ (เช่นวางไว้ใน public/me.jpg) */}
                 <Image
                   src="https://avatars.githubusercontent.com/u/179317890?v=4"
                   alt="Profile"
@@ -73,7 +72,7 @@ export default function Home() {
               <h1 className="text-2xl font-bold tracking-tight text-zinc-900">
                 Pasit Polwisepornsuk
               </h1>
-              <p className="text-zinc-500 font-medium">Full Stack Engineer</p>
+              <p className="text-zinc-500 font-medium">Full Stack Developer</p>
             </div>
           </div>
 
