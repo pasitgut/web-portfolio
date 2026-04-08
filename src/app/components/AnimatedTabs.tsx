@@ -1,22 +1,38 @@
-"use client";
+﻿"use client";
 import { motion, AnimatePresence } from "framer-motion";
-
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { useState } from "react";
-import AboutSection from "./about";
-import ProjectSection from "./project";
-import TechStackSection from "./techstack";
 
 export default function AnimatedTabs() {
   const [active, setActive] = useState<string>("about");
 
   return (
-    <Tabs value={active} onValueChange={setActive} className="w-full">
-      <TabsList>
-        <TabsTrigger value="about">About</TabsTrigger>
-        <TabsTrigger value="project">Projects</TabsTrigger>
-        <TabsTrigger value="techstack">Tech Stack</TabsTrigger>
-      </TabsList>
+    <div className="w-full">
+      <div className="flex gap-4 border-b">
+        <button
+          onClick={() => setActive("about")}
+          className={`pb-2 px-1 text-sm font-medium transition-colors ${
+            active === "about" ? "border-b-2 border-neutral-900 text-neutral-900" : "text-neutral-500"
+          }`}
+        >
+          About
+        </button>
+        <button
+          onClick={() => setActive("project")}
+          className={`pb-2 px-1 text-sm font-medium transition-colors ${
+            active === "project" ? "border-b-2 border-neutral-900 text-neutral-900" : "text-neutral-500"
+          }`}
+        >
+          Projects
+        </button>
+        <button
+          onClick={() => setActive("techstack")}
+          className={`pb-2 px-1 text-sm font-medium transition-colors ${
+            active === "techstack" ? "border-b-2 border-neutral-900 text-neutral-900" : "text-neutral-500"
+          }`}
+        >
+          Tech Stack
+        </button>
+      </div>
       <div className="relative mt-4">
         <AnimatePresence mode="wait">
           {active === "about" && (
@@ -27,9 +43,7 @@ export default function AnimatedTabs() {
               exit={{ opacity: 0, y: -10 }}
               transition={{ duration: 0.3 }}
             >
-              <TabsContent value="about" forceMount>
-                <AboutSection />
-              </TabsContent>
+              <p>About content</p>
             </motion.div>
           )}
           {active === "project" && (
@@ -40,9 +54,7 @@ export default function AnimatedTabs() {
               exit={{ opacity: 0, y: -10 }}
               transition={{ duration: 0.3 }}
             >
-              <TabsContent value="project" forceMount>
-                <ProjectSection />
-              </TabsContent>
+              <p>Project content</p>
             </motion.div>
           )}
           {active === "techstack" && (
@@ -53,13 +65,11 @@ export default function AnimatedTabs() {
               exit={{ opacity: 0, y: -10 }}
               transition={{ duration: 0.3 }}
             >
-              <TabsContent value="techstack" forceMount>
-                <TechStackSection />
-              </TabsContent>
+              <p>Tech stack content</p>
             </motion.div>
           )}
         </AnimatePresence>
       </div>
-    </Tabs>
+    </div>
   );
 }
