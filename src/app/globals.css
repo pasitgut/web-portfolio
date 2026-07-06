@@ -1,22 +1,31 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:is(.dark *));
+
 @theme {
   --font-sans: var(--font-sans), ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --font-mono: var(--font-mono), ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 
-@layer base {
-    body {
-        @apply bg-[#FDFBF7] text-neutral-800 antialiased selection:bg-neutral-200;
-    }
+html {
+  @apply bg-[#FDFBF7] text-neutral-800;
+  transition: background-color 0.5s cubic-bezier(0.32, 0.72, 0, 1),
+              color 0.5s cubic-bezier(0.32, 0.72, 0, 1);
+}
+
+html.dark {
+  @apply bg-[#0a0a0a] text-neutral-100;
 }
 
 .no-scrollbar {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 .no-scrollbar::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
